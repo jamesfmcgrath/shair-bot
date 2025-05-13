@@ -20,7 +20,7 @@
 ### 1. Clone the repository
 
 ```bash
-git clone git@github.com:your-username/shair-bot.git
+git clone git@github.com:jamesfmcgrath/shair-bot.git
 cd shair-bot
 npm install
 ```
