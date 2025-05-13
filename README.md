@@ -1,12 +1,75 @@
-# React + Vite
+# Shair-Bot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Proof of Concept Web App using React + Tailwind CSS
 
-Currently, two official plugins are available:
+**Shair-Bot** is a lightweight proof-of-concept dashboard application built with [React](https://reactjs.org/) and [Tailwind CSS](https://tailwindcss.com/). It is designed to demonstrate an interactive knowledge survey tool for potential investors.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [Vite](https://vitejs.dev/) – fast modern frontend tooling
+- [React 19](https://react.dev/) – component-based UI framework
+- [Tailwind CSS 3.4](https://tailwindcss.com/) – utility-first CSS
+- [PostCSS](https://postcss.org/) & [Autoprefixer](https://github.com/postcss/autoprefixer) – CSS tooling
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone git@github.com:your-username/shair-bot.git
+cd shair-bot
+npm install
+```
+
+### 2. Start the development server
+
+```bash
+npm run dev
+```
+
+Open your browser at `http://localhost:5173` to view the app.
+
+---
+
+## ⚙️ Tailwind Setup Notes
+
+Tailwind was manually installed and pinned to a stable version:
+
+```bash
+npm install -D tailwindcss@3.4.3 postcss autoprefixer
+npx tailwindcss init -p
+```
+
+Configuration files:
+
+- `tailwind.config.js`
+- `postcss.config.js`
+
+In `src/index.css`, Tailwind's directives are included:
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+---
+
+## 📈 Project Status
+
+- ✅ Project scaffolded with Vite + React
+- ✅ Tailwind CSS configured (v3.4.3 for CLI support)
+- ✅ Private GitHub repo initialized
+- ⏳ Layout and components in progress
+- 🔜 Interactive data + survey views
+- 🔜 Deployed prototype (via Vercel or Netlify)
+
+---
+
+## 📁 License
+
+This project is private and currently not licensed for public use.
