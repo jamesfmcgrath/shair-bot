@@ -1,8 +1,10 @@
 // src/App.jsx
 import React from 'react';
 import DashboardCard from './components/DashboardCard';
+import InsightsChart from './components/InsightsChart';
 import SurveyList from './components/SurveyList';
 import { dashboardCards } from './data/mockDashboardData';
+import { insights } from './data/mockInsightsData';
 import { surveys } from './data/mockSurveyData';
 
 export default function App() {
@@ -42,6 +44,9 @@ export default function App() {
             ))}
             <div className="mt-8">
               <SurveyList surveys={surveys} />
+            </div>
+            <div className="mt-8">
+              <InsightsChart data={insights} />
             </div>
           </div>
         </main>
