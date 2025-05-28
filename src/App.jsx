@@ -1,4 +1,5 @@
 // src/App.jsx
+import CompletedShairs from './components/CompletedShairs';
 import Header from './components/Header';
 import OpportunitiesBlock from './components/OpportunitiesBlock';
 import WelcomeBlock from './components/WelcomeBlock';
@@ -16,60 +17,7 @@ export default function App() {
 
         {/* Second Row: Shairs 75% / Targeted Research 25% */}
         <div className="col-span-2 gap-6 xl:grid xl:grid-cols-4">
-          <section
-            className="p-6 space-y-4 bg-white rounded-lg shadow xl:col-span-3"
-            id="shairs-block"
-          >
-            <div className="flex items-center justify-between">
-              <div className="flex space-x-2">
-                <button className="px-4 py-1 text-sm text-white rounded-full bg-brand-blue">
-                  Completed Shairs
-                </button>
-                <button className="px-4 py-1 text-sm rounded-full bg-gray-light text-text-dark">
-                  Research Projects
-                </button>
-              </div>
-              <input
-                type="text"
-                placeholder="Search Shairs..."
-                className="w-1/3 px-3 py-1 text-sm border rounded border-border-gray"
-              />
-            </div>
-            <div className="flex gap-4 mt-4">
-              {/* Left Sidebar */}
-              <aside className="w-1/3 space-y-2">
-                <div className="p-3 rounded cursor-pointer bg-background-blue hover:bg-brand-blue hover:text-white">
-                  Shair #1
-                </div>
-                <div className="p-3 rounded cursor-pointer bg-background-blue hover:bg-brand-blue hover:text-white">
-                  Shair #2
-                </div>
-                <div className="p-3 rounded cursor-pointer bg-background-blue hover:bg-brand-blue hover:text-white">
-                  Shair #3
-                </div>
-              </aside>
-              {/* Main Content */}
-              <div className="w-2/3 space-y-3">
-                <h3 className="text-lg font-bold">
-                  Shair #1: AI Research Insights
-                </h3>
-                <span className="px-2 py-1 text-xs text-black rounded bg-brand-yellow">
-                  Category: Technology
-                </span>
-                <p className="text-sm">
-                  In this research, you explored emerging uses of AI in
-                  healthcare. Below is your knowledge performance:
-                </p>
-                <div className="flex items-center justify-center h-24 rounded bg-background-blue">
-                  [Chart Placeholder]
-                </div>
-                <p className="text-sm font-medium text-text-muted">
-                  Compared to your peers, you scored 12% higher in accuracy and
-                  18% higher in engagement.
-                </p>
-              </div>
-            </div>
-          </section>
+          <CompletedShairs />
 
           <section
             className="p-6 bg-white rounded-lg shadow xl:col-span-1"
