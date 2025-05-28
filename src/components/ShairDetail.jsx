@@ -1,14 +1,14 @@
 export default function ShairDetail() {
   return (
     <div className="space-y-4">
-      <div>
-        <p className="text-[16px] font-light text-[#4C4F54]">
+      <div className="flex items-center">
+        <div className="text-[16px] font-light text-[#4C4F54]">
           Overview:{' '}
           <span className="inline text-[16px] font-bold text-[#4C4F54]">
             {' '}
             Shair Title: New!
           </span>
-        </p>
+        </div>
         <span className="ml-2 text-[12px] font-medium bg-[#F4F7FC] text-brand-navy px-2 py-1 rounded-[6px]">
           Category 1
         </span>

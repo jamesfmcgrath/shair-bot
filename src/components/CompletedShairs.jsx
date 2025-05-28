@@ -8,6 +8,7 @@ export default function CompletedShairs() {
     'Shair Title',
     'Shair Title',
     'Shair Title',
+    'Shair Title',
   ];
 
   return (
@@ -31,17 +32,19 @@ export default function CompletedShairs() {
       {/* Second Row: Grid */}
       <div className="flex gap-4 mt-4">
         {/* Left Sidebar */}
-        <aside className="w-1/3 space-y-2 text-[12px] font-normal leading-[15px]">
-          <p className="text-[16px] font-light text-[#4C4F54]">Shair</p>
+        <aside className="w-1/3 text-[12px] font-normal leading-[15px] bg-gray-light">
+          <div className="flex items-center h-[60px] px-3 text-[#262A33] text-[16px] bg-white">
+            Shair
+          </div>
           {shairs.map((title, idx) => (
             <div
               key={title}
               className={`flex items-center h-[48px] px-3 ${
                 idx === 0
                   ? 'bg-background-blue text-[#262A33] font-semibold'
-                  : idx === 1
-                  ? 'bg-white text-[#262A33]'
-                  : 'bg-gray-light text-[#262A33]'
+                  : idx % 2 === 0
+                  ? 'bg-gray-light text-[#262A33]'
+                  : 'bg-white text-[#262A33]'
               }`}
             >
               {title}
