@@ -1,3 +1,8 @@
+import ChartLegend from './ChartLegend';
+import PerformanceStackedBar from './PerformanceStackedBar';
+import PerformanceTotalBar from './PerformanceTotalBar';
+import ProgressChart from './ProgressChart';
+
 export default function ShairDetail() {
   return (
     <div className="space-y-4">
@@ -23,8 +28,23 @@ export default function ShairDetail() {
         egestas. Iaculis massa nisl malesuada lacinia.
       </p>
 
-      <div className="h-[120px] rounded bg-background-blue flex items-center justify-center">
-        [Charts Placeholder]
+      <div className="grid items-start grid-cols-1 gap-6 md:grid-cols-2">
+        {/* Left column: Total + Subcategories + Legend */}
+        <div className="space-y-4">
+          <PerformanceTotalBar value={63} />
+          <PerformanceStackedBar
+            label="Subcategory 1"
+            scores={{ vocabulary: 21, speed: 10, insights: 3 }}
+          />
+          <PerformanceStackedBar
+            label="Subcategory 2"
+            scores={{ vocabulary: 11, speed: 7, insights: 11 }}
+          />
+          <ChartLegend />
+        </div>
+
+        {/* Right column: Area Chart */}
+        <ProgressChart />
       </div>
 
       <h4 className="text-[16px] font-semibold text-[#262A33]">
