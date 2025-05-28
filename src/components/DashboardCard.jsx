@@ -1,11 +1,9 @@
-import React from 'react';
-
 export default function DashboardCard({ title, value, description }) {
   return (
-    <div className="bg-white p-4 shadow rounded-lg">
-      <h2 className="text-lg font-semibold text-gray-800">{title}</h2>
-      <p className="text-2xl font-bold mt-2">{value}</p>
-      <p className="text-sm text-gray-500 mt-1">{description}</p>
+    <div className="p-4 bg-white border rounded-lg shadow border-border">
+      <h2 className="text-lg font-semibold text-text">{title}</h2>
+      <p className="mt-2 text-2xl font-bold text-primary">{value}</p>
+      <p className="mt-1 text-sm text-muted">{description}</p>
     </div>
   );
 }
