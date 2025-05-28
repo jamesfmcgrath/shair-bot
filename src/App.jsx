@@ -1,5 +1,6 @@
 // src/App.jsx
 import Header from './components/Header';
+import OpportunitiesBlock from './components/OpportunitiesBlock';
 import WelcomeBlock from './components/WelcomeBlock';
 
 export default function App() {
@@ -11,25 +12,7 @@ export default function App() {
       {/* Main Content Area */}
       <div className="grid grid-cols-1 gap-6 p-6 xl:grid-cols-2">
         <WelcomeBlock />
-
-        <section
-          className="p-6 space-y-4 bg-white rounded-lg shadow"
-          id="opportunities-block"
-        >
-          <h2 className="text-xl font-bold">Shair.bot Opportunities</h2>
-          <p className="text-sm text-text-muted">
-            Discover new research opportunities tailored to your expertise. Join
-            to earn rewards and expand your knowledge base.
-          </p>
-          <div className="flex items-center justify-center h-40 rounded-lg bg-background-blue">
-            <span className="font-semibold text-brand-navy">
-              [Opportunity Cards Grid]
-            </span>
-          </div>
-          <button className="w-full px-4 py-2 mt-4 font-medium text-white transition rounded bg-brand-blue hover:bg-hover-blue">
-            View All
-          </button>
-        </section>
+        <OpportunitiesBlock />
 
         {/* Second Row: Shairs 75% / Targeted Research 25% */}
         <div className="col-span-2 gap-6 xl:grid xl:grid-cols-4">

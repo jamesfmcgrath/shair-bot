@@ -57,9 +57,16 @@ export default function WelcomeBlock() {
       </div>
 
       {/* Text */}
-      <p className="text-sm text-text-muted">
-        You're currently in the top 10% of participants this week. Keep up the
-        great work!
+      <p className="text-[14px] font-bold text-[#767676]">
+        You’re doing great. With an overall total of {totalPoints} points you
+        are in the{' '}
+        <span className="inline-flex items-center justify-center gap-[1.85px] px-[6px] py-[4px] rounded-[6px] bg-[#E8FFE1] text-[#28964F] text-[14px] font-bold leading-[17.5px]">
+          Top 10!
+        </span>
+        <br />
+        <span className="text-[12px] font-normal text-[#767676]">
+          Take another shair to stay in the top 10
+        </span>
       </p>
     </section>
   );

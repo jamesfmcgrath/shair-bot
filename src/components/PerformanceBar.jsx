@@ -8,7 +8,7 @@ export default function PerformanceBar({ label, value, color }) {
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="200"
+        width="210"
         height="8"
         viewBox="0 0 200 8"
         fill="none"
