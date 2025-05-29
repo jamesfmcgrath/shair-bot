@@ -31,7 +31,7 @@ export default function ShairDetail() {
 
       <div className="flex flex-col gap-8 md:flex-row">
         {/* Left column: Total + Subcategories + Legend */}
-        <div className="w-3/4 space-y-4">
+        <div className="space-y-4 xl:w-3/4">
           <PerformanceTotalBar value={63} />
           <PerformanceStackedBar
             label="Subcategory 1"

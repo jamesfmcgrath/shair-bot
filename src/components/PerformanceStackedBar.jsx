@@ -10,11 +10,11 @@ export default function PerformanceStackedBar({ label, scores }) {
   const total = Object.values(scores).reduce((sum, val) => sum + val, 0);
 
   return (
-    <div className="flex items-center content-center space-y-1">
-      <div className="w-1/4 text-[14px] font-normal text-[#262A33]">
+    <div className="flex flex-col items-center content-center space-y-1 xl:flex-row">
+      <div className="w-full xl:w-1/4 text-[14px] font-normal text-[#262A33]">
         {label}
       </div>
-      <div className="flex w-3/4 h-6 overflow-hidden rounded">
+      <div className="flex w-full h-6 overflow-hidden rounded xl:w-3/4">
         {Object.entries(scores).map(([key, value]) => (
           <div
             key={key}

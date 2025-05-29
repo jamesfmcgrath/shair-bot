@@ -2,7 +2,7 @@
 
 export default function ProgressChart() {
   return (
-    <div className="w-1/4 h-[140px] rounded overflow-hidden relative">
+    <div className="xl:w-1/4 h-[140px] rounded overflow-hidden relative">
       {/* Orange Layer */}
       <svg
         className="absolute top-0 left-0 w-[245px] h-[133px] flex-shrink-0"

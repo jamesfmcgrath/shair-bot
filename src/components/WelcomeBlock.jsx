@@ -23,7 +23,7 @@ export default function WelcomeBlock() {
       <h2 className="text-[20px] font-medium leading-[21px] text-text-dark">
         Welcome back, Taylor!
       </h2>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         <DonutChart value={totalPoints} />
 
         {/* Bars with SVGs */}

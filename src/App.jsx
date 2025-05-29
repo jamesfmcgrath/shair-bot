@@ -12,7 +12,7 @@ export default function App() {
       <Header />
 
       {/* Main Content Area */}
-      <div className="grid grid-cols-1 gap-6 p-6 xl:grid-cols-2">
+      <div className="gap-6 p-6 xl:grid xl:grid-cols-2">
         <WelcomeBlock />
         <OpportunitiesBlock />
 

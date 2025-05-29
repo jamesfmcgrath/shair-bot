@@ -17,7 +17,7 @@ export default function CompletedShairs() {
       id="shairs-block"
     >
       {/* Top Row: Buttons + Search */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col items-center justify-between xl:flex-row">
         <div className="flex space-x-2">
           <button className="flex h-[32px] px-4 py-1 items-center justify-center text-[16px] font-medium text-[#1C1F23] bg-background-blue rounded-full leading-[20px] tracking-[0.16px]">
             Completed Shairs
@@ -30,9 +30,9 @@ export default function CompletedShairs() {
       </div>
 
       {/* Second Row: Grid */}
-      <div className="flex gap-4 mt-4">
+      <div className="flex flex-col gap-4 mt-4 xl:flex-row">
         {/* Left Sidebar */}
-        <aside className="w-1/4 text-[12px] font-normal leading-[15px] bg-gray-light">
+        <aside className="xl:w-1/4 text-[12px] font-normal leading-[15px] bg-gray-light">
           <div className="flex items-center h-[60px] px-3 text-[#262A33] text-[16px] bg-white">
             Shair
           </div>
@@ -53,7 +53,7 @@ export default function CompletedShairs() {
         </aside>
 
         {/* Right Content */}
-        <div className="w-3/4">
+        <div className="xl:w-3/4">
           <ShairDetail />
         </div>
       </div>
