@@ -2,6 +2,7 @@
 import CompletedShairs from './components/CompletedShairs';
 import Header from './components/Header';
 import OpportunitiesBlock from './components/OpportunitiesBlock';
+import TargetedResearch from './components/TargetedResearch';
 import WelcomeBlock from './components/WelcomeBlock';
 
 export default function App() {
@@ -19,24 +20,7 @@ export default function App() {
         <div className="col-span-2 gap-6 xl:grid xl:grid-cols-4">
           <CompletedShairs />
 
-          <section
-            className="p-6 bg-white rounded-lg shadow xl:col-span-1"
-            id="targeted-research-block"
-          >
-            <h2 className="text-xl font-bold">Targeted Research</h2>
-            <p className="text-sm text-text-muted">
-              Research tailored to your profile and interests. Join a session to
-              earn rewards and contribute valuable insights.
-            </p>
-            <div className="flex items-center justify-center h-40 rounded-lg bg-background-green">
-              <span className="font-semibold text-success-green">
-                [Vertical Bar Chart]
-              </span>
-            </div>
-            <button className="w-full px-4 py-2 mt-4 font-medium text-white transition rounded bg-success-green hover:bg-emerald-600">
-              Learn More
-            </button>
-          </section>
+          <TargetedResearch />
         </div>
       </div>
 
