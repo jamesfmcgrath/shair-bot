@@ -17,7 +17,7 @@ export default function App() {
       <Header />
 
       {/* Main Content Area */}
-      <div className="gap-6 p-6 xl:grid xl:grid-cols-2">
+      <div className="flex flex-col gap-6 p-6 xl:grid xl:grid-cols-2">
         <WelcomeBlock />
         <OpportunitiesBlock />
 

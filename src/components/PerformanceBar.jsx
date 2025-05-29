@@ -1,36 +1,24 @@
 // PerformanceBar.jsx
 export default function PerformanceBar({ label, value, color }) {
+  // Calculate bar width as a percentage (assuming value is 0-100)
+  const barWidth = Math.max(0, Math.min(100, Number(value)));
+
   return (
     <div>
-      <div className="flex justify-between text-[14px] font-medium leading-[17.5px] px-2">
+      <div className="flex justify-between text-[14px] font-medium leading-[17.5px] tracking-[-0.24px] mb-1">
         <span className="text-[#262A33]">{label}</span>
         <span className="text-[#4C4F54]">{value}</span>
       </div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="210"
-        height="8"
-        viewBox="0 0 200 8"
-        fill="none"
-      >
-        <rect
-          x="0.226562"
-          y="8"
-          width="7.99999"
-          height="199.774"
-          rx="4"
-          transform="rotate(-90 0.226562 8)"
-          fill="#F2F2F2"
+      <div className="w-full h-2 bg-[#F2F2F2] rounded">
+        <div
+          className="h-2 rounded"
+          style={{
+            width: `${barWidth}%`,
+            backgroundColor: color,
+            transition: 'width 0.3s',
+          }}
         />
-        <rect
-          y="8"
-          width="8"
-          height={value}
-          rx="4"
-          transform="rotate(-90 0 8)"
-          fill={color}
-        />
-      </svg>
+      </div>
     </div>
   );
 }
