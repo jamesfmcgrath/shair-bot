@@ -2,7 +2,7 @@
 export default function PerformanceBar({ label, value, color }) {
   return (
     <div>
-      <div className="flex justify-between text-[14px] font-medium leading-[17.5px]">
+      <div className="flex justify-between text-[14px] font-medium leading-[17.5px] px-2">
         <span className="text-[#262A33]">{label}</span>
         <span className="text-[#4C4F54]">{value}</span>
       </div>

@@ -11,8 +11,8 @@ const performanceData = [
 
 const totalPoints = performanceData.reduce((sum, bar) => sum + bar.value, 0);
 
-const myCategories = ['Design', 'Research', 'AI', 'Health'];
-const relatedCategories = ['Science', 'Tech', 'Culture'];
+const myCategories = ['Tech', 'Health', 'Science', 'Culture'];
+const relatedCategories = ['Design', 'Research', 'Food'];
 
 export default function WelcomeBlock() {
   return (
