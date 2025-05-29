@@ -7,7 +7,7 @@ export default function OpportunitiesBlock() {
       className="p-6 space-y-4 bg-white rounded-lg shadow"
       id="opportunities-block"
     >
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col justify-between xl:items-center xl:flex-row">
         <h2 className="text-[20px] font-medium leading-[25px] tracking-[0.2px] text-text-dark">
           Shair.bot Opportunities
         </h2>

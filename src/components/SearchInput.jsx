@@ -2,7 +2,7 @@ import { FaSearch } from 'react-icons/fa';
 
 export default function SearchInput({ placeholder, onSearch }) {
   return (
-    <div className="relative w-[300px] h-[32px]">
+    <div className="relative">
       <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-[#666] text-sm" />
       <input
         type="text"

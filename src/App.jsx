@@ -1,4 +1,9 @@
 // src/App.jsx
+import '@fontsource/nunito-sans/400.css';
+import '@fontsource/nunito-sans/500.css';
+import '@fontsource/nunito-sans/600.css';
+import '@fontsource/nunito-sans/700.css';
+import '@fontsource/nunito-sans/800.css';
 import CompletedShairs from './components/CompletedShairs';
 import Header from './components/Header';
 import OpportunitiesBlock from './components/OpportunitiesBlock';
@@ -19,7 +24,6 @@ export default function App() {
         {/* Second Row: Shairs 75% / Targeted Research 25% */}
         <div className="col-span-2 gap-6 xl:grid xl:grid-cols-4">
           <CompletedShairs />
-
           <TargetedResearch />
         </div>
       </div>
