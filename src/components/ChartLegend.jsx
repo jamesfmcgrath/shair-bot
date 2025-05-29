@@ -15,7 +15,7 @@ export default function ChartLegend() {
           className="flex items-center space-x-1 text-[12px] text-[#262A33]"
         >
           <span
-            className="inline-block w-3 h-3 rounded-full"
+            className="inline-block w-3 h-3 rounded-sm"
             style={{ backgroundColor: color }}
           ></span>
           <span>{label}</span>

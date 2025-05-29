@@ -6,8 +6,8 @@ import ProgressChart from './ProgressChart';
 
 export default function ShairDetail() {
   return (
-    <div className="space-y-4">
-      <div className="flex items-center">
+    <div>
+      <div className="flex items-center border-b border-[#E8F0FF] p-4">
         <div className="text-[16px] font-light text-[#4C4F54]">
           Overview:{' '}
           <span className="inline text-[16px] font-bold text-[#4C4F54]">
@@ -20,36 +20,38 @@ export default function ShairDetail() {
         </span>
       </div>
 
-      <h4 className="text-[16px] font-semibold text-[#262A33]">
-        My Performance
-      </h4>
-      <p className="text-[14px] font-normal leading-[20px] tracking-[-0.24px] text-[#5C6B80]">
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
-        diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum
-        egestas. Iaculis massa nisl malesuada lacinia.
-      </p>
+      <div className="p-4 space-y-4">
+        <h4 className="text-[16px] font-semibold text-[#262A33]">
+          My Performance
+        </h4>
+        <p className="text-[14px] font-normal leading-[20px] tracking-[-0.24px] text-[#5C6B80]">
+          In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean
+          sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus
+          bibendum egestas. Iaculis massa nisl malesuada lacinia.
+        </p>
 
-      <div className="flex flex-col gap-8 md:flex-row">
-        {/* Left column: Total + Subcategories + Legend */}
-        <div className="space-y-4 xl:w-3/4">
-          <PerformanceTotalBar value={63} />
-          <PerformanceStackedBar
-            label="Subcategory 1"
-            scores={{ vocabulary: 21, speed: 10, insights: 3 }}
-          />
-          <PerformanceStackedBar
-            label="Subcategory 2"
-            scores={{ vocabulary: 11, speed: 7, insights: 11 }}
-          />
-          <ChartLegend />
+        <div className="flex flex-col gap-8 md:flex-row">
+          {/* Left column: Total + Subcategories + Legend */}
+          <div className="space-y-4 xl:w-3/4">
+            <PerformanceTotalBar value={63} />
+            <PerformanceStackedBar
+              label="Subcategory 1"
+              scores={{ vocabulary: 21, speed: 10, insights: 3 }}
+            />
+            <PerformanceStackedBar
+              label="Subcategory 2"
+              scores={{ vocabulary: 11, speed: 7, insights: 11 }}
+            />
+            <ChartLegend />
+          </div>
+
+          {/* Right column: Area Chart */}
+          <ProgressChart />
         </div>
 
-        {/* Right column: Area Chart */}
-        <ProgressChart />
-      </div>
-
-      <div className="h-[60px] rounded flex items-center justify-center">
-        <ComparisonStats highest={76} lowest={31} total={63} rank="Top 10%" />
+        <div className="flex items-center py-6 rounded">
+          <ComparisonStats highest={76} lowest={31} total={63} rank="Top 10%" />
+        </div>
       </div>
     </div>
   );
