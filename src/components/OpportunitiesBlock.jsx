@@ -4,7 +4,7 @@ import SearchInput from './SearchInput';
 export default function OpportunitiesBlock() {
   return (
     <section
-      className="p-6 space-y-4 bg-white rounded-lg shadow"
+      className="px-6 py-5 space-y-4 bg-white rounded-lg shadow"
       id="opportunities-block"
     >
       <div className="flex flex-col justify-between xl:items-center xl:flex-row">
