@@ -10,11 +10,10 @@ export default function TargetedResearch() {
           Targeted Research
         </h2>
       </div>
-
       {/* Content */}
       <div className="bg-[#607DA9] text-white rounded-b-[6px] p-5 space-y-6">
         <div>
-          <h3 className="text-[18px] font-extrabold leading-[25.2px] tracking-[-0.24px]">
+          <h3 className="text-[18px] font-bold leading-[25.2px] tracking-[-0.24px]">
             Ready to unlock deeper insights and start your own research?
           </h3>
           <p className="text-[16px] font-normal leading-[22.4px] tracking-[-0.24px] mt-2">
@@ -22,7 +21,7 @@ export default function TargetedResearch() {
             takers. Get high-quality responses faster and make smarter decisions
             with confidence.
           </p>
-          <button className="inline-flex items-center gap-[4px] px-[10px] py-[2px] mt-4 rounded-[8px] bg-[#FFA23B] text-white text-[12px] font-bold leading-[20px]">
+          <button className="inline-flex items-center gap-[4px] px-[10px] py-[2px] mt-4 rounded-[8px] bg-[#FFA23B] text-white text-[12px] font-bold leading-[20px] transition-colors duration-200 hover:bg-[#FFB95E] hover:text-[#262A33] focus:outline-none focus:ring-2 focus:ring-[#FFA23B]">
             Learn more →
           </button>
         </div>

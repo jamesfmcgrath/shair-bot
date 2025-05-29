@@ -7,6 +7,7 @@ import '@fontsource/nunito-sans/800.css';
 import CompletedShairs from './components/CompletedShairs';
 import Header from './components/Header';
 import OpportunitiesBlock from './components/OpportunitiesBlock';
+import ShairBotButton from './components/ShairBotButton';
 import TargetedResearch from './components/TargetedResearch';
 import WelcomeBlock from './components/WelcomeBlock';
 
@@ -29,9 +30,7 @@ export default function App() {
       </div>
 
       {/* Floating Button */}
-      <button className="fixed px-5 py-3 font-semibold text-white rounded-full shadow-lg bottom-6 right-6 bg-brand-orange hover:bg-brand-yellow">
-        ✳ Shair.bot
-      </button>
+      <ShairBotButton />
     </div>
   );
 }
