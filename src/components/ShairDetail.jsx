@@ -1,3 +1,4 @@
+import CategoryBadge from './CategoryBadge';
 import ChartLegend from './ChartLegend';
 import ComparisonStats from './ComparisonStats';
 import PerformanceStackedBar from './PerformanceStackedBar';
@@ -10,14 +11,12 @@ export default function ShairDetail() {
       <div className="flex items-center border-b border-[#E8F0FF] p-4">
         <div className="text-[16px] font-light text-[#4C4F54]">
           Overview:{' '}
-          <span className="inline text-[16px] font-bold text-[#4C4F54]">
+          <span className="inline text-[16px] font-bold text-[#4C4F54] mr-2">
             {' '}
             Shair Title: New!
           </span>
         </div>
-        <span className="ml-2 text-[12px] font-medium bg-[#F4F7FC] text-brand-navy px-2 py-1 rounded-[6px]">
-          Category 1
-        </span>
+        <CategoryBadge key="Category 1" text="Category 1" />
       </div>
 
       <div className="p-4 space-y-4">

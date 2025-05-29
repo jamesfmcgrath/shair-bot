@@ -1,3 +1,5 @@
+import CategoryBadge from './CategoryBadge';
+
 export default function OpportunityCard({
   title,
   category,
@@ -11,9 +13,7 @@ export default function OpportunityCard({
         <h3 className="text-[14px] font-bold leading-[20px] tracking-[-0.24px] text-text-dark">
           {title}
         </h3>
-        <span className="text-[12px] font-medium leading-[15px] bg-[#F4F7FC] px-2 py-1 rounded-[6px] text-brand-navy">
-          {category}
-        </span>
+        <CategoryBadge key={category} text={category} />
       </div>
       <p className="text-[14px] font-normal leading-[20px] tracking-[-0.24px] text-text-dark">
         {description}

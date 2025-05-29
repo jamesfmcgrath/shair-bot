@@ -1,6 +1,6 @@
 export default function ShairBotButton() {
   return (
-    <button className="fixed flex flex-row px-5 py-3 font-semibold text-white rounded-full shadow-lg align-center bottom-6 right-6 bg-brand-orange hover:bg-brand-yellow">
+    <button className="fixed flex flex-row px-5 py-3 font-semibold text-white rounded-full shadow-lg hover:text-brand-blue align-center bottom-6 right-6 bg-brand-orange hover:bg-brand-yellow">
       <svg
         className="mr-2"
         xmlns="http://www.w3.org/2000/svg"
