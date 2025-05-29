@@ -32,7 +32,7 @@ export default function CompletedShairs() {
       {/* Second Row: Grid */}
       <div className="flex gap-4 mt-4">
         {/* Left Sidebar */}
-        <aside className="w-1/3 text-[12px] font-normal leading-[15px] bg-gray-light">
+        <aside className="w-1/4 text-[12px] font-normal leading-[15px] bg-gray-light">
           <div className="flex items-center h-[60px] px-3 text-[#262A33] text-[16px] bg-white">
             Shair
           </div>
@@ -53,7 +53,7 @@ export default function CompletedShairs() {
         </aside>
 
         {/* Right Content */}
-        <div className="w-2/3">
+        <div className="w-3/4">
           <ShairDetail />
         </div>
       </div>

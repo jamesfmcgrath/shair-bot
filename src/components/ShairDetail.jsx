@@ -1,4 +1,5 @@
 import ChartLegend from './ChartLegend';
+import ComparisonStats from './ComparisonStats';
 import PerformanceStackedBar from './PerformanceStackedBar';
 import PerformanceTotalBar from './PerformanceTotalBar';
 import ProgressChart from './ProgressChart';
@@ -28,9 +29,9 @@ export default function ShairDetail() {
         egestas. Iaculis massa nisl malesuada lacinia.
       </p>
 
-      <div className="grid items-start grid-cols-1 gap-6 md:grid-cols-2">
+      <div className="flex flex-col gap-8 md:flex-row">
         {/* Left column: Total + Subcategories + Legend */}
-        <div className="space-y-4">
+        <div className="w-3/4 space-y-4">
           <PerformanceTotalBar value={63} />
           <PerformanceStackedBar
             label="Subcategory 1"
@@ -47,11 +48,8 @@ export default function ShairDetail() {
         <ProgressChart />
       </div>
 
-      <h4 className="text-[16px] font-semibold text-[#262A33]">
-        User Knowledge Points Comparison
-      </h4>
-      <div className="h-[60px] bg-gray-light rounded flex items-center justify-center">
-        [Comparison Placeholder]
+      <div className="h-[60px] rounded flex items-center justify-center">
+        <ComparisonStats highest={76} lowest={31} total={63} rank="Top 10%" />
       </div>
     </div>
   );

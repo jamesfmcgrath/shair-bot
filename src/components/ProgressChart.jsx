@@ -2,7 +2,7 @@
 
 export default function ProgressChart() {
   return (
-    <div className="w-full h-[140px] rounded overflow-hidden relative">
+    <div className="w-1/4 h-[140px] rounded overflow-hidden relative">
       {/* Orange Layer */}
       <svg
         className="absolute top-0 left-0 w-[245px] h-[133px] flex-shrink-0"
@@ -79,6 +79,157 @@ export default function ProgressChart() {
             <stop offset="1" stopColor="#5488D4" stopOpacity="0" />
           </linearGradient>
         </defs>
+      </svg>
+
+      <svg
+        className="absolute bottom-0 left-0 w-[245px] h-[7px] flex-shrink-0"
+        xmlns="http://www.w3.org/2000/svg"
+        width="245"
+        height="7"
+        viewBox="0 0 245 7"
+        fill="none"
+      >
+        <line x1="0.5" y1="0.979492" x2="0.5" y2="6.60046" stroke="#262A33" />
+        <line
+          x1="12.7305"
+          y1="0.979492"
+          x2="12.7305"
+          y2="6.60046"
+          stroke="#8A8A8A"
+        />
+        <line
+          x1="61.6523"
+          y1="0.979492"
+          x2="61.6523"
+          y2="6.60046"
+          stroke="#8A8A8A"
+        />
+        <line
+          x1="110.574"
+          y1="0.979492"
+          x2="110.574"
+          y2="6.60046"
+          stroke="#8A8A8A"
+        />
+        <line
+          x1="159.496"
+          y1="0.979492"
+          x2="159.496"
+          y2="6.60046"
+          stroke="#8A8A8A"
+        />
+        <line
+          x1="208.418"
+          y1="0.979492"
+          x2="208.418"
+          y2="6.60046"
+          stroke="#8A8A8A"
+        />
+        <line
+          x1="24.9609"
+          y1="0.979492"
+          x2="24.9609"
+          y2="6.60046"
+          stroke="#8A8A8A"
+        />
+        <line
+          x1="73.8828"
+          y1="0.979492"
+          x2="73.8828"
+          y2="6.60046"
+          stroke="#8A8A8A"
+        />
+        <line
+          x1="122.805"
+          y1="0.979492"
+          x2="122.805"
+          y2="6.60046"
+          stroke="#8A8A8A"
+        />
+        <line
+          x1="171.727"
+          y1="0.979492"
+          x2="171.727"
+          y2="6.60046"
+          stroke="#8A8A8A"
+        />
+        <line
+          x1="220.648"
+          y1="0.979492"
+          x2="220.648"
+          y2="6.60046"
+          stroke="#8A8A8A"
+        />
+        <line
+          x1="37.1914"
+          y1="0.979492"
+          x2="37.1914"
+          y2="6.60046"
+          stroke="#8A8A8A"
+        />
+        <line
+          x1="86.1133"
+          y1="0.979492"
+          x2="86.1133"
+          y2="6.60046"
+          stroke="#8A8A8A"
+        />
+        <line
+          x1="135.035"
+          y1="0.979492"
+          x2="135.035"
+          y2="6.60046"
+          stroke="#8A8A8A"
+        />
+        <line
+          x1="183.957"
+          y1="0.979492"
+          x2="183.957"
+          y2="6.60046"
+          stroke="#8A8A8A"
+        />
+        <line
+          x1="232.879"
+          y1="0.979492"
+          x2="232.879"
+          y2="6.60046"
+          stroke="#8A8A8A"
+        />
+        <line
+          x1="49.4219"
+          y1="0.979492"
+          x2="49.4219"
+          y2="6.60046"
+          stroke="#262A33"
+        />
+        <line
+          x1="98.3438"
+          y1="0.979492"
+          x2="98.3438"
+          y2="6.60046"
+          stroke="#262A33"
+        />
+        <line
+          x1="147.266"
+          y1="0.979492"
+          x2="147.266"
+          y2="6.60046"
+          stroke="#262A33"
+        />
+        <line
+          x1="196.188"
+          y1="0.979492"
+          x2="196.188"
+          y2="6.60046"
+          stroke="#262A33"
+        />
+        <line
+          x1="245.109"
+          y1="0.979492"
+          x2="245.109"
+          y2="6.60046"
+          stroke="#262A33"
+        />
       </svg>
     </div>
   );
