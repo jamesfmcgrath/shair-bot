@@ -6,15 +6,16 @@ export default function PerformanceBar({ label, value, color }) {
   return (
     <div>
       <div className="flex justify-between text-[14px] font-medium leading-[17.5px] tracking-[-0.24px] mb-1">
-        <span className="text-[#262A33]">{label}</span>
-        <span className="text-[#4C4F54]">{value}</span>
+        <span className="text-text-dark">{label}</span>
+        <span className={`text-charcoal ${color ? `text-[${color}]` : ''}`}>
+          {value}
+        </span>
       </div>
-      <div className="w-full h-2 bg-[#F2F2F2] rounded">
+      <div className="w-full h-2 rounded bg-gray-light">
         <div
-          className="h-2 rounded"
+          className={`h-2 rounded ${color ? `${color}` : ''}`}
           style={{
             width: `${barWidth}%`,
-            backgroundColor: color,
             transition: 'width 0.3s',
           }}
         />

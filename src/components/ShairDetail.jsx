@@ -8,10 +8,10 @@ import ProgressChart from './ProgressChart';
 export default function ShairDetail() {
   return (
     <div>
-      <div className="flex items-center border-b border-[#E8F0FF] p-4">
-        <div className="text-[16px] font-light text-[#4C4F54]">
+      <div className="flex items-center p-4 border-b border-pale-blue">
+        <div className="text-[16px] font-light text-charcoal">
           Overview:{' '}
-          <span className="inline text-[16px] font-bold text-[#4C4F54] mr-2">
+          <span className="inline text-[16px] font-bold text-charcoal mr-2">
             {' '}
             Shair Title: New!
           </span>
@@ -20,10 +20,10 @@ export default function ShairDetail() {
       </div>
 
       <div className="p-4 space-y-4">
-        <h4 className="text-[16px] font-semibold text-[#262A33]">
+        <h4 className="text-[16px] font-semibold text-text-dark">
           My Performance
         </h4>
-        <p className="text-[14px] font-normal leading-[20px] tracking-[-0.24px] text-[#5C6B80]">
+        <p className="text-[14px] font-normal leading-[20px] tracking-[-0.24px] text-slate-blue">
           In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean
           sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus
           bibendum egestas. Iaculis massa nisl malesuada lacinia.

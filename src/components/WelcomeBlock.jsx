@@ -3,10 +3,10 @@ import DonutChart from './DonutChart';
 import PerformanceBar from './PerformanceBar';
 
 const performanceData = [
-  { label: 'Tech', value: 75, color: '#FFA23B' },
-  { label: 'Health', value: 39, color: '#179BFF' },
-  { label: 'Science', value: 44, color: '#607DA9' },
-  { label: 'Culture', value: 94, color: '#FFD53B' },
+  { label: 'Tech', value: 75, color: 'bg-brand-orange' },
+  { label: 'Health', value: 39, color: 'bg-brand-blue' },
+  { label: 'Science', value: 44, color: 'bg-brand-navy' },
+  { label: 'Culture', value: 94, color: 'bg-brand-yellow' },
 ];
 
 const totalPoints = performanceData.reduce((sum, bar) => sum + bar.value, 0);
@@ -36,7 +36,7 @@ export default function WelcomeBlock() {
         {/* Categories */}
         <div className="space-y-2">
           {/* My Categories */}
-          <h3 className="text-[#262A33] text-[14px] font-bold leading-[20px] tracking-[-0.24px]">
+          <h3 className="text-text-dark text-[14px] font-bold leading-[20px] tracking-[-0.24px]">
             My Categories
           </h3>
           <div className="grid grid-cols-2 gap-2">
@@ -57,14 +57,14 @@ export default function WelcomeBlock() {
       </div>
 
       {/* Text */}
-      <p className="text-[14px] font-bold text-[#767676]">
+      <p className="text-[14px] font-bold text-steel-gray">
         You’re doing great. With an overall total of {totalPoints} points you
         are in the{' '}
-        <span className="inline-flex items-center justify-center gap-[1.85px] px-[6px] py-[4px] rounded-[6px] bg-[#E8FFE1] text-[#28964F] text-[14px] font-bold leading-[17.5px]">
+        <span className="inline-flex items-center justify-center gap-[1.85px] px-[6px] py-[4px] rounded-[6px] bg-background-green text-forest-green text-[14px] font-bold leading-[17.5px]">
           Top 10!
         </span>
         <br />
-        <span className="text-[12px] font-normal text-[#767676]">
+        <span className="text-[12px] font-normal text-steel-gray">
           Take another shair to stay in the top 10
         </span>
       </p>

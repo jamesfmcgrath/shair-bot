@@ -18,7 +18,7 @@ export default function OpportunitiesBlock() {
         />
         <ShareButton />
       </div>
-      <p className="text-[16px] font-medium leading-[20px] tracking-[-0.24px] text-[#5C6B80]">
+      <p className="text-[16px] font-medium leading-[20px] tracking-[-0.24px] text-slate-blue">
         Keep adding value with what you know! Explore related shairs or discover
         new topics you're qualified for. Every response adds value and boosts
         your knowledge points.

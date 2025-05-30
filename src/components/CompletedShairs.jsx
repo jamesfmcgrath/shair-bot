@@ -21,7 +21,7 @@ export default function CompletedShairs() {
       {/* Top Row: Buttons + Search */}
       <div className="flex flex-col items-center justify-between p-6 pb-4 border-b xl:flex-row border-gray-light">
         <div className="flex space-x-2">
-          <button className="flex h-[32px] px-4 py-1 items-center justify-center text-[16px] font-medium text-[#1C1F23] bg-background-blue rounded-full leading-[20px] tracking-[0.16px]">
+          <button className="flex h-[32px] px-4 py-1 items-center justify-center text-[16px] font-medium text-rich-black bg-background-blue rounded-full leading-[20px] tracking-[0.16px]">
             Completed Shairs
           </button>
           <button className="flex h-[32px] px-4 py-1 items-center justify-center text-[16px] font-normal text-[#666] bg-gray-light rounded-full leading-[20px]">
@@ -36,7 +36,7 @@ export default function CompletedShairs() {
       <div className="flex flex-col xl:flex-row">
         {/* Left Sidebar */}
         <aside className="xl:w-1/4 text-[12px] font-normal leading-[15px] bg-gray-light border-r border-gray-light">
-          <div className="flex items-center h-[60px] px-3 text-[#262A33] text-[16px] bg-white">
+          <div className="flex items-center h-[60px] px-3 text-text-dark text-[16px] bg-white">
             Shair <FaCaretDown />
           </div>
           {shairs.map((title, idx) => (
