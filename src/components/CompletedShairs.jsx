@@ -24,7 +24,7 @@ export default function CompletedShairs() {
           <button className="flex h-[32px] px-4 py-1 items-center justify-center text-[16px] font-medium text-rich-black bg-background-blue rounded-full leading-[20px] tracking-[0.16px]">
             Completed Shairs
           </button>
-          <button className="flex h-[32px] px-4 py-1 items-center justify-center text-[16px] font-normal text-[#666] bg-gray-light rounded-full leading-[20px]">
+          <button className="flex h-[32px] px-4 py-1 items-center justify-center text-[16px] font-normal text-medium-gray bg-gray-light rounded-full leading-[20px]">
             Research Projects
           </button>
         </div>
@@ -44,10 +44,10 @@ export default function CompletedShairs() {
               key={`${title}-${idx}`}
               className={`flex items-center h-[48px] px-3 ${
                 idx === 0
-                  ? 'bg-background-blue text-[#262A33] font-semibold'
+                  ? 'bg-background-blue text-text-dark font-semibold'
                   : idx % 2 === 0
-                  ? 'bg-gray-light text-[#262A33]'
-                  : 'bg-white text-[#262A33]'
+                  ? 'bg-gray-light text-text-dark'
+                  : 'bg-white text-text-dark'
               }`}
             >
               {title}
