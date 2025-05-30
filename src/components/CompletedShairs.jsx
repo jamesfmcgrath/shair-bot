@@ -19,7 +19,7 @@ export default function CompletedShairs() {
       id="shairs-block"
     >
       {/* Top Row: Buttons + Search */}
-      <div className="flex flex-col items-center justify-between p-6 pb-4 border-b xl:flex-row border-gray-light">
+      <div className="flex flex-col items-center justify-between p-6 border-b xl:flex-row border-gray-light">
         <div className="flex space-x-2">
           <button className="flex h-[32px] px-4 py-1 items-center justify-center text-[16px] font-medium text-rich-black bg-background-blue rounded-full leading-[20px] tracking-[0.16px]">
             Completed Shairs

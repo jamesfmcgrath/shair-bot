@@ -4,14 +4,18 @@ import '@fontsource/nunito-sans/500.css';
 import '@fontsource/nunito-sans/600.css';
 import '@fontsource/nunito-sans/700.css';
 import '@fontsource/nunito-sans/800.css';
+import { useState } from 'react';
+import ChatPanel from './components/ChatPanel';
+import ChatToggleButton from './components/ChatToggleButton';
 import CompletedShairs from './components/CompletedShairs';
 import Header from './components/Header';
 import OpportunitiesBlock from './components/OpportunitiesBlock';
-import ShairBotButton from './components/ShairBotButton';
 import TargetedResearch from './components/TargetedResearch';
 import WelcomeBlock from './components/WelcomeBlock';
 
 export default function App() {
+  const [isChatOpen, setIsChatOpen] = useState(false);
+
   return (
     <div className="flex flex-col min-h-screen font-sans bg-gray-light text-text-dark">
       {/* Header */}
@@ -30,7 +34,23 @@ export default function App() {
       </div>
 
       {/* Floating Button */}
-      <ShairBotButton />
+      <ChatToggleButton
+        isOpen={isChatOpen}
+        onClick={() => setIsChatOpen(!isChatOpen)}
+      />
+
+      {/* Chat Panel */}
+      {isChatOpen && (
+        <>
+          {/* Optional: Background overlay */}
+          <div
+            className="fixed inset-0 z-30 bg-black/40 backdrop-blur-sm"
+            onClick={() => setIsChatOpen(false)}
+          ></div>
+
+          <ChatPanel onClose={() => setIsChatOpen(false)} />
+        </>
+      )}
     </div>
   );
 }
