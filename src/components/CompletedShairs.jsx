@@ -41,7 +41,7 @@ export default function CompletedShairs() {
           </div>
           {shairs.map((title, idx) => (
             <div
-              key={title}
+              key={`${title}-${idx}`}
               className={`flex items-center h-[48px] px-3 ${
                 idx === 0
                   ? 'bg-background-blue text-[#262A33] font-semibold'
