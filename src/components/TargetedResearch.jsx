@@ -1,5 +1,4 @@
-// src/components/TargetedResearch.jsx
-import chartImage from '../assets/targeted-research-chart.png';
+import chartImage from '../assets/chart2.png';
 
 export default function TargetedResearch() {
   return (
