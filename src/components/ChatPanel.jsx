@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-export default function ChatPanel({ onClose }) {
+export default function ChatPanel() {
   const [chatStep, setChatStep] = useState(0);
   const [isTyping, setIsTyping] = useState(false);
 
@@ -28,7 +28,7 @@ export default function ChatPanel({ onClose }) {
 
       return () => clearTimeout(timer);
     }
-  }, [chatStep]);
+  }, [chatStep, flow.length]);
 
   return (
     <div className="fixed bottom-[100px] right-6 w-[380px] h-[75vh] bg-white rounded-lg shadow-lg flex flex-col z-40 overflow-hidden">
